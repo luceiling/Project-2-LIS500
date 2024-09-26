@@ -1,0 +1,59 @@
+/* fonts */
+
+/* files */
+
+/* heading */
+
+/* basic */
+
+h1 {
+    color: navy;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 45px;
+    box-sizing: content-box;
+    align-content: center;
+}
+h2 {
+    color: darkgreen;
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    box-sizing: content-box;
+    align-content: center;
+}
+
+body {
+    background-color: floralwhite;
+    border-right: 50px;
+    border-left: 50px;
+    font-family: Georgia, serif;
+}
+
+p {
+    color: darkgoldenrod;
+    font-size: 20px;
+    box-sizing: content-box;
+    font-family: Georgia, serif;
+}
+
+/* index */
+
+/* about */
+
+.aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    width: 30%; 
+    align-content: center;
+    border: 50px;
+    align-items: center;
+       
+}
+
+/* resources */
+
+/* hero */
+
+/* footer */
