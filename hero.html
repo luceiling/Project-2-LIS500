@@ -8,45 +8,54 @@
     </head>
     <body>
         
-        <!-- Top navigation bar -->
+                <!-- Top navigation bar -->
         <div class="topnav">
-            <button class="btn">
-            <a href="index.html">Home</a>
-            </button>
-            <button class="btn">
-                <a href="about.html">About Us</a>
-            </button>
-             <button class="btn">
-            <a href="resources.html">Resources</a>
-             </button>
-             <button class="btn">
-            <a href="hero.html">Tech Hero</a>
-             </button>
+            <form action="index.html">
+                <button type="submit" class="btn">Home</button>
+            </form>
+            <form action="about.html">
+              <button type="submit" class="btn">About Us</button>
+            </form>
+            <form action="resources.html">
+             <button type="submit" class="btn">Resources</button>
+            </form>
+            <form action="hero.html">
+             <button type="submit" class="btn">Tech Heroes</button>
+            </form>
         </div>
-
-          <h1>Our Tech Heroes</h1>
+        
+        <h1>Our Tech Heroes</h1>
         <!-- Tech heroes table -->
         <table>
-            <tr>
-                <th>Lark</th>
-                <th>Lucy</th>
-                <th>Sara</th>
-            </tr>
-            <tr>
-                <td>[placeholder for tech hero name]</td>
-                <td>[placeholder for tech hero name]</td>
-                <td>[placeholder for tech hero name]</td>
-            </tr>
-            <tr>
-                <td>[placeholder for brief bio and reason behind choice]</td>
-                <td>[placeholder for brief bio and reason behind choice]</td>
-                <td>[placeholder for brief bio and reason behind choice]</td>
-            </tr>
-            <tr>
-                <td>[tech hero img here]</td>
-                <td>[tech hero img here]</td>
-                <td>[tech hero img here]</td>
-            </tr>
+            <colgroup id="lark"></colgroup>
+            <colgroup id="lucy"></colgroup>
+            <colgroup id="sara"></colgroup>
+            <thead>
+                <!-- This row is table headers -->
+                <tr>
+                    <th scope="colgroup">Lark</th>
+                    <th scope="colgroup">Lucy</th>
+                    <th scope="colgroup">Sara</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rest of the table -->
+                <tr>
+                    <td>[placeholder for tech hero name]</td>
+                    <td>[placeholder for tech hero name]</td>
+                    <td>[placeholder for tech hero name]</td>
+                </tr>
+                <tr>
+                    <td>[placeholder for brief bio and reason behind choice]</td>
+                    <td>[placeholder for brief bio and reason behind choice]</td>
+                    <td>[placeholder for brief bio and reason behind choice]</td>
+                </tr>
+                <tr>
+                    <td>[tech hero img here]</td>
+                    <td>[tech hero img here]</td>
+                    <td>[tech hero img here]</td>
+                </tr>
+            </tbody>
         </table>
     </body>
 </html>
