@@ -2,7 +2,39 @@
 
 /* files */
 
-/* heading */
+/* header */
+
+.btn {
+    border-right-color: white;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Georgia, serif;
+    background-color: darksalmon;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+}
+
+.topnav {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darksalmon;
+}
+
+form {
+    display: inline-block;    
+}
+
+.active {
+    background-color: darkred
+}
 
 /* basic */
 
@@ -11,16 +43,37 @@ h1 {
     margin: 0;
     font-family: Georgia, serif;
     font-size: 45px;
-    box-sizing: content-box;
     align-content: center;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px
 }
 h2 {
     color: darkgreen;
-    margin: 0;
     font-family: Georgia, serif;
-    font-size: 40px;
+    font-size: 30px;
     box-sizing: content-box;
     align-content: center;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+h3 {
+    color: darkcyan;
+    box-sizing: content-box;
+    align-content: center;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    font-family: Gerogia, serif;
+    font-size: 20px
+}
+
+.subsection {
 }
 
 body {
@@ -32,9 +85,24 @@ body {
 
 p {
     color: darkgoldenrod;
-    font-size: 20px;
+    font-size: 17px;
     box-sizing: content-box;
     font-family: Georgia, serif;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+li {
+    color: darkmagenta;
+    font-size: 15px;
+    box-sizing: content-box;
+    font-family: Georgia, serif;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-left: 1px;
+    padding-top: 5px;
 }
 
 /* index */
@@ -42,18 +110,56 @@ p {
 /* about */
 
 .aboutcontainer {
-    display: flex;
-    flex-direction: column;
     display: inline-block;
-    width: 30%; 
-    align-content: center;
-    border: 50px;
-    align-items: center;
+    width: 100%; 
+    padding-bottom: 5px;
+    padding-top: 5px;
        
 }
 
 /* resources */
 
 /* hero */
+
+.hero {
+    text-align: center
+}
+
+table {
+    
+}
+
+th {
+    color: darkolivegreen;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    box-sizing: content-box;
+    align-content: center;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+tr {
+    color: indianred;
+    box-sizing: content-box;
+    align-content: center;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 7px;
+    font-family: Gerogia, serif;
+    font-size: 20px;
+}
+
+.trh {
+    text-align: center;
+}
+
+.trb {
+    font-size: 15px;
+}
+
 
 /* footer */
