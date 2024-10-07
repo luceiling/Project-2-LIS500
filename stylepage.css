@@ -8,6 +8,7 @@
 
 .btn {
     border-right-color: white;
+    border-color: white;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -45,38 +46,36 @@ h1 {
     margin: 0;
     font-family: Georgia, serif;
     font-size: 45px;
+    display: block;
     align-content: center;
     padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 30px
 }
 h2 {
-    color: darkgreen;
+    color: darkolivegreen;
     font-family: Georgia, serif;
     font-size: 30px;
     box-sizing: content-box;
-    align-content: center;
+    display: block;
     padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 15px;
 }
 
 h3 {
-    color: darkcyan;
-    box-sizing: content-box;
-    align-content: center;
+    color: darkolivegreen;
+    display: block;
     padding-bottom: 7px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 7px;
     font-family: Gerogia, serif;
     font-size: 20px
 }
 
-.subsection {
-}
 
 body {
     background-color: floralwhite;
@@ -86,18 +85,18 @@ body {
 }
 
 p {
-    color: darkgoldenrod;
+    color: darkred;
     font-size: 17px;
     box-sizing: content-box;
     font-family: Georgia, serif;
     padding-bottom: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
     padding-top: 15px;
 }
 
 li {
-    color: darkmagenta;
+    color: darkred;
     font-size: 15px;
     box-sizing: content-box;
     font-family: Georgia, serif;
@@ -109,17 +108,29 @@ li {
 
 /* index */
 
+.home {
+    text-align: center;
+    padding: 10px 275px 10px 275px;
+}
+
 /* about */
 
 .aboutcontainer {
-    display: inline-block;
-    width: 100%; 
+    width:; 
     padding-bottom: 5px;
     padding-top: 5px;
-       
+    padding-left: 75px;
+    padding-right: 75px;
+    display: block;
 }
 
 /* resources */
+
+.subsection,
+.sectionTitle {
+    text-align: center;
+    padding: 10px 100px 10px 100px;
+}
 
 /* hero */
 
@@ -128,7 +139,18 @@ li {
 }
 
 table {
-    
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+    overflow: auto;
+    overflow-anchor: none;
+}
+
+td {
+    vertical-align: top;
 }
 
 th {
@@ -144,7 +166,8 @@ th {
 }
 
 tr {
-    color: indianred;
+    color: darkred;
+    color: darkred;
     box-sizing: content-box;
     align-content: center;
     padding-bottom: 7px;
@@ -164,6 +187,5 @@ tr {
     display: inline-block;
     align-content: top;
 }
-
 
 /* footer */
