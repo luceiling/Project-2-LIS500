@@ -8,15 +8,14 @@
 
 .btn {
     border-right-color: white;
-    border-color: white;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: Georgia, serif;
-    background-color: darksalmon;
-    font-size: 20px;
+    background-color: darkolivegreen;
+    font-size: 25px;
     cursor: pointer;
     border-bottom: none;
     border-left: none;
@@ -28,8 +27,9 @@
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: darksalmon;
+    background-color: darkolivegreen;
     text-align: center;
+
 }
 
 form {
@@ -111,9 +111,27 @@ li {
 
 .home {
     text-align: center;
-    padding: 10px 275px 10px 275px;
+    padding: 25px 23% 10px 23%;
 }
 
+.homeH {
+    text-align: center;
+    padding: 25px 100px 10px 100px;
+    display: block;
+    align-content: center;
+}
+
+.homeH2 {
+    text-align: center;
+    padding: 10px 10% 0px 10%;
+    display: block;
+    align-content: center;
+}
+.art {
+    font-size: 15px;
+    color: navy;
+    padding-left: 150px;
+}
 /* about */
 
 .aboutcontainer {
@@ -137,6 +155,7 @@ li {
     padding-bottom: 5px;
     padding-top: 5px;
 }
+
 
 /* hero */
 
