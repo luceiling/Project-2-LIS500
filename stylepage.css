@@ -7,7 +7,6 @@
 /* header */
 
 .btn {
-    border-right-color: white;
     color: white;
     padding-left: 10px;
     padding-right: 10px;
@@ -17,9 +16,12 @@
     background-color: darkolivegreen;
     font-size: 25px;
     cursor: pointer;
-    border-bottom: none;
-    border-left: none;
-    border-top: none;
+    border: none;
+    
+}
+
+.btn:hover {
+    background-color: #8ea764;
 }
 
 .topnav {
