@@ -3,7 +3,7 @@
 
 // Video
 let video;
-let label = "waiting...";
+let label = "Upload an Image";
 let confidence = 0.0;
 let classifier;
 let modelURL = 'https://teachablemachine.withgoogle.com/models/Q0Tl7D-bs/';
@@ -13,15 +13,14 @@ let img;
 
 // STEP 1: Load the model!
 function preload() {
-  classifier = ml5.imageClassifier(modelURL + 'model.json'
-  );
+  classifier = ml5.imageClassifier(modelURL + 'model.json');
 }
 
   // Image upload
 function setup() {
   createCanvas(640, 520);
   input = createFileInput(handleFile);
-  input.position(0, 0);
+  input.position();
 }
 
 function draw() {
