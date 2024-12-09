@@ -51,6 +51,7 @@
             I chose images of figure drawings I did, and one hyperrealistic digital painting I made of a friend; only the figure is painted in that image, the background is the original photo.  I also added various more "professional" photos I took of landscapes and people, including photos of myself.  Some of these photos have minor touch-ups, HSV adjustments done in editing, or are close-ups on particular human anatomy (hands, fingers, mouths, etc.).  My hope was that the algorithm would be able to then pick up on whether real/photographed human anatomy was present in any part of any given image.<br><br>
             Some shortcomings of the dataset were that I haven't done enough photoshoots of people to have a diverse portfolio of human/figure-based photography.  I had photographed myself, a couple of former housemates, and someone else I went to undergrad with, all of whom are white or otherwise lighter-skinned.  Lucy added some stock photos of other humans for greater diversity.  In searching through my files, I also realized I have lost some of the higher quality images I had of my non-photographic artwork, and a number of my art pieces were damaged in a flood a few years back so trying to photograph them now unfortunately wouldn't have done much good.<br><br>
             Other things that likely cause some of the inaccuracies in our model include what I described above: hyperrealistic artworks will have ink/paint strokes that very closely mimic real HSV maps.  In fact, if I upload my hyperrealistic digital portrait painting into the model, the model has a high output confidence that the image contains a real human (inaccurate), even though the model was trained on this image specifically.  I tried testing another version of the same painting where the background is just a gradient instead of a photograph, and the machine still thinks it contains a real human with 99% confidence.  As was mentioned a few times throughout Boulamwini’s book, we don’t know what all cues the machine is using to make its determinations; we don’t know precisely how it is going from the training data to its new outputs.  In this case, it seems like the image’s background does not play heavily into the output decision.  So, having trained the algorithm using some hyperrealistic paintings/drawings, it seems we have exposed just a fraction of the fallibility inherent in machine learning.
+            <br><br> <a href="https://github.com/luceiling/Project-2-LIS500/tree/be37f9cc61b5d0a42db33905c5999c1f19c85eb2/Images" target="_blank">Take a look at the images we used to train our model!</a>
         </p>
         <h3>Step 3: Training the Model and Programming the Model</h3>
         <h3>Training the Model</h3>
@@ -65,9 +66,10 @@
                     <button type="submit" class="btn" id="iat-btn">Try Out Our Machine Learning Model</button>
                 </form>
             </div>
+      <h2 class="sectionTitle">Our Model in Action</h2>
         <center>
-            <video width="640" height="480" style="margin-top: 15px" controls>
-                <source src="LIS%20500%20Machine%20Learning%20Showcase%20-%20Made%20with%20Clipchamp.mp4" type="video/mp4">
+            <video width="700" height="" controls>
+                <source src="LIS500_Machine_Learning_Showcase.mp4" type="video/mp4">
                 Your browser does not support the video tag
             </video>
         </center>
@@ -84,6 +86,7 @@
             When Buolamwini (107-108) was working on classification, she struggled with the bias that comes with naming the different classifications, finally settling on something more objective. She settled on the specific color of people’s skin, rather than race or ethnicity because it is “more specific and objective” (Buolamwini 108). This resonated with us as we decided how to do our own classifications. We settled on the classifications of real human vs. not real human because it is objective. Our project does not have as many complications as Buolamwini’s in this regard, but remaining objective with our classifications was still something we took away from her work. 
             <br><br>
             Buolamwini finishes off her novel with a poem titled “Still Uncompleted,” which resonates with what we learned. The people training AI, like we did during this project, need to view humanity as more than data. So many things need to be considered when working with AI. We considered so many issues while working on this project, and I doubt we would have made these considerations without reading Buolamwini’s book. Consent is certainly a tricky aspect of AI, but it needs to be at least considered. Most people would not be happy with their face being used to train AI, so it is concerning that their likeness can be used without consent. It is also concerning that people’s labor is being used to train AI without their work being compensated. There are concerns of our AI not being perfect, but we understand why it has some issues. Our dataset was limited, which is an issue Buolamwini repeatedly drove home. We spent a lot of time thinking about how to classify our data, settling on something objective like Buolamwini chose to. So many of Buolamwini’s concerns about AI resonated deeply with us as we worked on this project, and we hope that more experts make these considerations as they work with AI, because lack of these considerations can have massive consequences. 
+            
             </p>
       <h2 class="sectionTitle">References</h2>
       <h3>Buolamwini, J. (2023). <i>Unmasking AI: My mission to protect what is human in a world of machines</i>. Random House.</h3>

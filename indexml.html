@@ -33,9 +33,30 @@
             </form>
         </div>
     
-    <div style="margin: 25px;">
-         <script src="sketch.js">Your browser does not support this function</script>
+ <!-- Model -->
+    <div>
+        <script src="sketch.js">
+            Your browser does not support this function
+        </script>
     </div>
+    
+<!-- Instructions for Model -->
+
+
+        <h2 class="sectionTitle">To Use Our Model:</h2>
+            <ol class="sectionTitle" style="text-align: left; align-content: center; padding-left: 15%; padding-right: 15%;">
+                <li>Upload an image
+                </li>
+                <ul>
+                    <li> Select "Choose File"</li>
+                    <li> Use a .JPG or .PNG for best results. File types like .HEIC are not supported in this model</li>
+                 </ul>
+                <li>Interpreting the model</li>
+                <ul>                
+                    <li>The model classifies an image as "not real human" or "real human." Please read information on how we trained our model on the <a href=machine.html target="_blank">Machine Learning Page</a> to see more information on this</li>
+                    <li>The number next to the classification is the rate of confidence the model feels on the classification. .99 is the most confident, and it will go down to .5 before switching to the other classification. This means that if something is classifying at .53 confidence, the model is very unsure whether the image is human or not.</li>
+                </ul>
+            </ol>
 </body>
 
 </html>

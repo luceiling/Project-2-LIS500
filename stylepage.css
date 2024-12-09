@@ -24,6 +24,22 @@
     background-color: #8ea764;
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.center {
+  margin: 25px;
+  position: relative;
+  top: 50%;
+  left: 15%;
+    right: 15%;
+}
+
 .topnav {
     padding-left: 10px;
     padding-right: 10px;
@@ -39,10 +55,18 @@ form {
 }
 
 .active {
-    background-color: darkred
+    background-color: darkred;
 }
 
 /* basic */
+
+a:link {
+    color: darkblue;
+}
+
+a:visited {
+    color: rebeccapurple;
+}
 
 h1 {
     color: navy;
@@ -77,6 +101,17 @@ h3 {
     padding-top: 7px;
     font-family: Gerogia, serif;
     font-size: 20px
+}
+
+h4 {
+    color: darkolivegreen;
+    display: block;
+    padding-bottom: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 0px;
+    font-family: Gerogia, serif;
+    font-size: 18px
 }
 
 
@@ -194,7 +229,6 @@ th {
 
 tr {
     color: darkred;
-    color: darkred;
     box-sizing: content-box;
     align-content: center;
     padding-bottom: 7px;
@@ -213,6 +247,19 @@ tr {
     font-size: 15px;
     display: inline-block;
     align-content: top;
+}
+
+/* machine */
+
+iframe {
+    resize: horizontal;
+    resize: vertical;
+    border: none;
+    overflow: auto;
+}
+
+canvas {
+  display: block;
 }
 
 /* footer */
