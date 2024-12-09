@@ -35,13 +35,17 @@
         
         <!--about the model-->
   <div style="margin-left: 35px; margin-right: 35px; margin-bottom: 35px">     
-        <h1 class="home">Project Purpose</h1>
+        <h1 class="home">Our Machine Learning Model</h1>
         <h2 class="sectionTitle">What We Did</h2>
+      
+      <!--Planning-->
         <h3>Step 1: Planning</h3>
         <p class="reflectBody">
             We had multiple Zoom meetings to plan out the process and ideas we had. We started ambitious, thinking we could do focus on training a machine to learn biomes or seasons, but we decided that, with how broad that category could be and how diverse each area shows its seasons, it may be too difficult to do. We also wanted to use mostly our own images in the model. Lark had some photos of Minnesota wilderness, but we would be a bit beholden to the region and seasons he had photographed. <br><br>
             But through this line of thinking, because of Lark's art, we decided that it would be interesting to explore whether AI would be able to tell the difference between art and human. We extended this a bit to "not real human" and "real human" to be a little more objective in our model. 
         </p>
+      
+      <!--Samples/Images-->
         <h3>Step 2: Compiling Images</h3>
         <h4>Lark:</h4>
         <p class="reflectBody">
@@ -53,6 +57,8 @@
             Other things that likely cause some of the inaccuracies in our model include what I described above: hyperrealistic artworks will have ink/paint strokes that very closely mimic real HSV maps.  In fact, if I upload my hyperrealistic digital portrait painting into the model, the model has a high output confidence that the image contains a real human (inaccurate), even though the model was trained on this image specifically.  I tried testing another version of the same painting where the background is just a gradient instead of a photograph, and the machine still thinks it contains a real human with 99% confidence.  As was mentioned a few times throughout Boulamwini’s book, we don’t know what all cues the machine is using to make its determinations; we don’t know precisely how it is going from the training data to its new outputs.  In this case, it seems like the image’s background does not play heavily into the output decision.  So, having trained the algorithm using some hyperrealistic paintings/drawings, it seems we have exposed just a fraction of the fallibility inherent in machine learning.
             <br><br> <a href="https://github.com/luceiling/Project-2-LIS500/tree/be37f9cc61b5d0a42db33905c5999c1f19c85eb2/Images" target="_blank">Take a look at the images we used to train our model!</a>
         </p>
+      
+      <!--Programming the model, training the model-->
         <h3>Step 3: Training the Model and Programming the Model</h3>
         <h3>Training the Model</h3>
         <p class="reflectBody">
@@ -60,6 +66,8 @@
         <h3>Programming the Model</h3>
         <p class="reflectBody">We debated making the program specifically only use live image input, and created the program for that, but decided that it did not work for what we wanted. The main issue with the video feed was that, probably because of our lower sample base, there was too much variation of results even when there was little movement on camera.<br><br>The three of us agreed that we liked the image uploader on the basic Google model better for our preferences, so Lucy <a href="https://editor.p5js.org/luceiling/sketches/72J3BSUOr" target="_blank"> redid the code on p5js.org</a> to make uploading images an option. Thankfully, there are a ton of resources available to make this process a little easier, and Lucy was able to find a guide that walked through this process. While some issues still exist, like the dimensions of the images stretching, making some of them look a little weird and maybe impacting the results of the model (e.g., some of the images we used in the model only show up with 0.99 confidence), this still ended up working really well and having a more consistent confidence rating over the video feed version. In the video below, you can see that the model has an easier time telling what is not human than what is, as the confidence is, on average, lower for actual humans verses non-human images, but it is still pretty accurate. See the video below to see how it works, or try it out yourself!
         </p>
+      
+      <!--The model, our example, etc.-->
         <h2 class="sectionTitle">Results</h2>
             <div style="text-align: center;">
                 <form action="indexml.html" target="_blank>">
@@ -73,6 +81,8 @@
                 Your browser does not support the video tag
             </video>
         </center>
+      
+      <!--reflection, conclusion, resources-->
         <h2 class="sectionTitle">Reflection</h2>
         <p class="reflectBody">
             Working on this project gave us a much greater understanding of Buolamwini’s book. Particularly, we gained more perspective on the complications with training an AI, how bias can negatively impact the results, and the issues of collecting a large dataset. The first aspect of Buolamwini’s book that came up while we worked was the question of consent. Buolamwini states, “Was the data obtained with consent? What were the working conditions and compensation for the workers who processed the data?” (Buolamwini 68). This was one of our chief concerns when we started the project. Where would we obtain our images? How would we ensure we obtained the images legally? We did not want to illegally obtain images, stealing images that the artists worked hard on. There was no chance of the artists getting compensation from our usage. We almost immediately decided to use our own images to avoid this issue, but this is not a viable solution when thousands or even millions of images are needed. 
@@ -86,7 +96,6 @@
             When Buolamwini (107-108) was working on classification, she struggled with the bias that comes with naming the different classifications, finally settling on something more objective. She settled on the specific color of people’s skin, rather than race or ethnicity because it is “more specific and objective” (Buolamwini 108). This resonated with us as we decided how to do our own classifications. We settled on the classifications of real human vs. not real human because it is objective. Our project does not have as many complications as Buolamwini’s in this regard, but remaining objective with our classifications was still something we took away from her work. 
             <br><br>
             Buolamwini finishes off her novel with a poem titled “Still Uncompleted,” which resonates with what we learned. The people training AI, like we did during this project, need to view humanity as more than data. So many things need to be considered when working with AI. We considered so many issues while working on this project, and I doubt we would have made these considerations without reading Buolamwini’s book. Consent is certainly a tricky aspect of AI, but it needs to be at least considered. Most people would not be happy with their face being used to train AI, so it is concerning that their likeness can be used without consent. It is also concerning that people’s labor is being used to train AI without their work being compensated. There are concerns of our AI not being perfect, but we understand why it has some issues. Our dataset was limited, which is an issue Buolamwini repeatedly drove home. We spent a lot of time thinking about how to classify our data, settling on something objective like Buolamwini chose to. So many of Buolamwini’s concerns about AI resonated deeply with us as we worked on this project, and we hope that more experts make these considerations as they work with AI, because lack of these considerations can have massive consequences. 
-            
             </p>
       <h2 class="sectionTitle">References</h2>
       <h3>Buolamwini, J. (2023). <i>Unmasking AI: My mission to protect what is human in a world of machines</i>. Random House.</h3>
